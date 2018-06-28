@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css.css">
+    <title>JS</title>
+</head>
+<body>
+<div class="container">
+    <div class="row">
+        <div class="col-md-4">
+            <h1>Bai 1</h1>
+            <div class="box1" id="box1" onMouseOut="fc11()" onmouseover="fc1()"><!--background images--></div>
+            <script>
+                function fc1() {
+                    document.getElementById("box1").style.backgroundImage = "url('https://picsum.photos/100/100/?blur')";
+                }
+                function fc11(){
+                    document.getElementById("box1").style.backgroundImage = "url('https://picsum.photos/100/100?image=0')"
+                }
+            </script>
+        </div>
+        <div class="col-md-4"></div>
+        <div class="col-md-4"></div>
+    </div>
+</div>
+</body>
+</html>
