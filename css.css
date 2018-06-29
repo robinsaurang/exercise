@@ -10,3 +10,12 @@
     background-size: cover;
 }
 
+.box2{
+    position: relative;
+    max-width: 200px;
+    height:200px;
+    margin: auto;
+}
+.box2 img{
+    width: 100%;
+}

@@ -11,7 +11,7 @@
 </head>
 <body>
 <div class="container">
-    <div class="row">
+    <div class="row text-center">
         <div class="col-md-4">
             <h1>Bai 1</h1>
             <div class="box1" id="box1" onMouseOut="fc11()" onmouseover="fc1()"><!--background images--></div>
@@ -24,8 +24,55 @@
                 }
             </script>
         </div>
-        <div class="col-md-4"></div>
-        <div class="col-md-4"></div>
+        <div class="col-md-4">
+            <h1>Bai 2</h1>
+            <div  class="box2">
+                <img onclick="fc3()" id="img3" src="https://picsum.photos/100/100?image=0" alt="">
+            </div>
+            <script>
+                function fc3(){
+                    document.getElementById("img3").src= "https://picsum.photos/100/100/?random";
+                }
+            </script>
+            <h1>Bai 4</h1>
+            <div class="box5">
+                <img id="img" src="img1.jpg" alt="">
+            </div>
+            <span onclick="fcPrew()" id="prew">prew</span>
+            <span onclick="fcNext()" id="next">next</span>
+            <script>
+                var arr = ["img1","img2","img3","img4","img5"];
+                var i = 0;
+
+                function fcNext() {
+                    i++;
+                    document.getElementById("img").src= arr[i] + ".jpg";
+                    if (i == arr.length-1){
+                        document.getElementById("next").style = "display:none";
+                    }
+                }
+                function fcPrew(){
+                    i--;
+                    document.getElementById("img").src= arr[i] + ".jpg";
+                    if(i == 0){
+                        document.getElementById("prew").style = "display:none";
+                    }
+                }
+            </script>
+        </div>
+        <div class="col-md-4">
+            <h1>Bai 3</h1>
+            <form action="">
+                <input type="text" onclick="fc4()">
+
+            </form>
+            <script>
+                function fc4(){
+                    document.body.style.backgroundColor = "pink";
+                }
+            </script>
+
+        </div>
     </div>
 </div>
 </body>
